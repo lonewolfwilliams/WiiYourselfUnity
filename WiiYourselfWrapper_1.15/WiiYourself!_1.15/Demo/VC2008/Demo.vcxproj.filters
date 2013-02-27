@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{0f82e4cc-0757-4d20-a945-e7f2cd75499e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiimote.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Demo.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiimote.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiimote_state.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\History.txt">
+      <Filter>Library</Filter>
+    </None>
+    <None Include="..\..\License.txt">
+      <Filter>Library</Filter>
+    </None>
+    <None Include="..\..\ReadMe.txt">
+      <Filter>Library</Filter>
+    </None>
+    <None Include="..\Demo ReadMe.txt" />
+  </ItemGroup>
+</Project>
