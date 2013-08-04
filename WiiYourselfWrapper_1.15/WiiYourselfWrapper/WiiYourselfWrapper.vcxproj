@@ -65,8 +65,8 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir "$(SolutionDir)$(SolutionName)\bin\$(Configuration)\Assets\Lib"
-copy "$(TargetPath)" "$(SolutionDir)$(SolutionName)\bin\$(Configuration)\Assets\Lib"</Command>
+      <Command>mkdir "$(SolutionDir)WiiYourselfUnity\bin\$(Configuration)\Assets\Lib"
+copy "$(TargetPath)" "$(SolutionDir)WiiYourselfUnity\bin\$(Configuration)\Assets\Lib"</Command>
       <Message>create fake asset directory and add dll</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>

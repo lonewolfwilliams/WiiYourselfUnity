@@ -28,7 +28,7 @@ Wiiyourself is compiled as dll, which in turn is consumed by Unity through WiiMo
 directory structure
 -------------------
 
-/Debug: 
+/Debug:  
 /Release: project builds for all the dependencies of WiiYourselfBridge for Unity (not really of interest)  
 
 /UnityExampleProject: Sample project showing how to use the library in Unity  
