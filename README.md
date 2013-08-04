@@ -28,17 +28,17 @@ Wiiyourself is compiled as dll, which in turn is consumed by Unity through WiiMo
 directory structure
 -------------------
 
-- /Debug: 
-- /Release: project builds for all the dependencies of WiiYourselfBridge for Unity (not really of interest)
+/Debug: 
+/Release: project builds for all the dependencies of WiiYourselfBridge for Unity (not really of interest)  
 
-- /UnityExampleProject: Sample project showing how to use the library in Unity
+/UnityExampleProject: Sample project showing how to use the library in Unity  
 
-- /WiiYourselfWrapper_1.15:
-	-- /WiiYourself_1.15: Gl.itters original (unmodified) Wiiyourself library, visual Studio 2008 project builds a static library
-	-- /WiiYourselfWrapper: The wrapper for the WiiYourself static Library, visual studio 2010 project builds a .dll wrapping the static library
+/WiiYourselfWrapper_1.15:  
+	/WiiYourself_1.15: Gl.itters original (unmodified) Wiiyourself library, visual Studio 2008 project builds a static library  
+	/WiiYourselfWrapper: The wrapper for the WiiYourself static Library, visual studio 2010 project builds a .dll wrapping the static library  
 
-- /WiiYourselfUnity: The WiiYourselfBridge, visual studio 2010 project builds a test harness console application that consumes the wrapper dll via interop
-	-- /WiiYourselfBridge.cs: the c# class you need to use in your unity project to consume the dll via interop
+/WiiYourselfUnity: The WiiYourselfBridge, visual studio 2010 project builds a test harness console application that consumes the wrapper dll via interop  
+	/WiiYourselfBridge.cs: the c# class you need to use in your unity project to consume the dll via interop  
 
 ALL THE SOLUTION FILES FOR BUILDING THE LIBRARY ARE IN THE ROOT OF THE REPO
 
