@@ -18,6 +18,8 @@ The bad:
 The ugly:
 Bluetooth connectivity with the wiimote is as reliable as your bluetooth stack is compatible with wiimotes
 
+This code is distributed under a BSD3 licence
+
 -----------------
 project structure
 -----------------
