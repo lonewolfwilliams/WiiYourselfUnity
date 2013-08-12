@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+</html>
+	<head>
+		<title>WiiYourself In Unity</title>
+	</head>
+	<body>
+		<h1>WiiYourself in Unity!</h1>
+		<p>WiiYourself Unity is an unmanaged <span style="text-decoration: underline;">windows only library</span> (.dll) and C-Sharp interop Bridge class written by <a href="https://github.com/lonewolfwilliams">Lonewolfwilliams</a> that wraps the <a href="http://wiiyourself.gl.tter.org/">WiiYourself library written by gl.tter</a></p>
+		<h2>Good news</h2>
+		<p>This is <span style="text-decoration: underline;">not a plugin</span>, which means that this library can be used with the free edition of Unity.</p>
+		<p>This project is distributed for free under a <a href="http://www.tldrlegal.com/license/bsd-3-clause-license-(revised)">BSD licence</a></p>
+		<h2>Bad news</h2>
+		<p>This is for windows only</p>
+		<p>I don't provide support for this library, after all, it didn't cost you anything ;)</p>
+		<h1>Using the library</h1>
+		<p>Although the sample project included here should work 'out of the box' you need to pair a WiiMote with Windows first</p>
+		<p>Unfortunately pairing your WiiMote successfully with windows depends on the compatibility of your WiiMote with your bluetooth stack</p>
+		<p>Some people seem to have more success with the <a href="http://www.bluesoleil.com/index.aspx">Blue Soleil</a> stack, than their proprietary one</p>
+		<p>Pairing your Bluetooth controller is done as follows:</p>
+		<ol>
+			<li>Click 'start' and then click 'control panel'</li>
+			<li>Under hardware and sound click 'add a device' (you may have the 'small icons' view if so click 'devices and printers' then 'add a device')</li>
+			<li>Hold down the 1 and 2 buttons (keep them held down through the whole pairing process)</li>
+			<li>Follow the instructions on the 'add a device' wizard (It may take a couple of seconds for the device to be visible)</li>
+			<li>The Wiimote should show up as: 'Nintendo RVL-CNT-01' or simply 'Input Device'</li>
+			<img src="./images/Devices.png" width="33%" height="33%"/>
+			<li>If you are asked, pair without using a code</li>
+			<img src="./images/no pin.png" width="33%" height="33%"/>
+			<li>When the system tray shows that the hardware has been installed you may release buttons 1 and 2</li>
+			<img src="./images/complete.png" width="33%" height="33%"/>
+		</ol>
+		<h2>Troubleshooting</h2>
+		<ul>
+			<li>Q: My WiiMote doesn't show up in 'add a device'</li>
+			<ul>
+				<li>A: Your proprietary bluetooth stack may not be very compatible with your WiiMote, you could try using <a href="http://www.bluesoleil.com/index.aspx">Blue Soleil</a></li>
+				<li>A: Make sure that you are holding down the 1 and 2 buttons on your WiiMote throughout the pairing process</li>
+				<li>A: Make sure your bluetooth is switched on</li>
+				<li>A: Make sure that your WiiMote is charged</li>
+			</ul>
+			<li>Q: My WiiMote is paired but doesn't seem to be recognised when I run the unity project</li>
+			<ul>
+				<li>A: Try removing your WiiMote from the device list (click 'devices and printers' then right click on 'Nintendo RVL-CNT-01' and select 'Remove device' (you will have to go through the pairing process again) One paired, try re-opening and running the Unity Project</li>
+			</ul>
+			<li>Q: My Wii is wobbly</li>
+			<ul>
+				<li>A: The input from the accelerometers is very precise (or sensitive depending on how you look at it) you may want to use some kind of smoothing algorithm</li>
+			</ul>
+		</ul>
+		<h1>Further Development</h1>
+		<p>At the moment only a small amount of gl.tters library is exposed via my managed wrapper, which is currently only really a proof of concept - you can set LED's on the WiiMote (to test outgoing communication) and you can get the pitch roll and 'directional' value from the Wiimote (to test incoming communication)</p>
+		<p>I hope to continue development on this project wrapping more functionality over time (I'm particularly interested in the sound capabilities) or you could help me speed up development by submitting a patch ;)</p>
+	</body>
+</html>
