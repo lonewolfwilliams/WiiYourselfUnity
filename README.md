@@ -31,9 +31,13 @@ directory structure
 -------------------
 
 /UnityExampleProject: Sample project showing how to use the library in Unity  
+
 /WiiYourselfWrapper_VS2008: Visual Studio 2008 C++ Project - An unmanaged C++ DLL that wraps the final version of gl.itters wiiyourself library (version 1.15)
+
 /WiiYourselfWrapper_VS2010: Visual Studio 2010 C++ Project - An unmanaged C++ DLL that wraps the final version of gl.itters wiiyourself library (version 1.15)
+
 /HowToConnectWiimote: HTML file describing how to connect a Wiimote on Windows 
+
 /WiiMoteBridge.cs: Interop code to bridge the unmanaged DLL so it can be used in Unity (see sample for details)
 
 --------
